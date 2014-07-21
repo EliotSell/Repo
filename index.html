@@ -12,6 +12,7 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/supersized.3.1.3.core.min.js"></script>
+<script type="text/javascript" src="js/getsetcookie.js"></script>
 <title>OX OPTIMAL | Expert PPC | Advanced Remarketing Specialists</title>
 <link rel="icon" type="image/png" href="images/favicon.png">
 <script>
@@ -23,6 +24,8 @@
   ga('create', 'UA-43765290-1', 'oxoptimal.com');
   ga('send', 'pageview');
 
+
+
 </script><!--Google Analytics Code-->
 <script type="text/javascript">  
 		
@@ -31,8 +34,12 @@
 					//Background image
 					slides	:  [ { image : 'http://oxoptimal.com/images/ox_books.jpg' } ]					
 				});
-			});
-			
+			});			
+</script>
+
+<!--Ox dynamic page view tracking code-->
+<script type="text/javascript"> 
+checkCookie();
 </script>
 
 </head>
@@ -57,10 +64,41 @@ Located in the Bay View neighborhood of Milwaukee, WI.<br/><br/>
 info@oxoptimal.com</a> | vm: <u>414-459-9304</u>
 </p>
 
+
 </div><!--End black_box div-->
 </div><!--End wrapper div-->
+
+
+<!--This is a image map for Brandon. Testing cookie tracker.-->
+<img id="imagemap" src="images/trans.png"  alt="map" usemap="#imagemap" >
+
+<map name="imagemap">
+  <area shape="rect" coords="0,0,50,50" alt="hidden box" href="pages/test.html">
+</map>
+<!--End image map.-->
+
 <div id="footer">
-©2014 Ox Optimal
+©
+<script language="JavaScript" type="text/javascript">
+    now = new Date
+    theYear=now.getYear()
+    if (theYear < 1900)
+    theYear=theYear+1900
+    document.write(theYear)
+</script>
+Ox Optimal
 </div><!--End footer div-->
+
+<script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+    // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+    // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/53cd331911b38a65790000d3.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>
 </body>
 </html>

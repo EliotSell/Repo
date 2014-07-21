@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
@@ -12,6 +12,7 @@
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script type="text/javascript" src="../js/supersized.3.1.3.core.min.js"></script>
+<script type="text/javascript" src="../js/getsetcookie.js"></script>
 <title>Ox Optimal Internet Marketing: Advanced Re-marketing</title>
 <link rel="icon" type="image/png" href="../images/favicon.png">
 <script>
@@ -32,12 +33,14 @@
 					slides	:  [ { image : 'http://oxoptimal.com/images/ox_blueprint.jpg' } ]					
 				});
 			});
+
+      
 			
 </script>
 
 </head>
 
-<body>
+<body onload="javascript: alert('hello world!ox_podcast');">
 <div id="wrapper">
 <div id="black_box2">
 <a href="../index.html"><img src="../images/ox_logo.png" alt="Ox Optimal Logo"></a><br/>
@@ -68,5 +71,16 @@ info@oxoptimal.com</a> | vm: <u>414-459-9304</u>
 <div id="footer">
 ©2014 Ox Optimal
 </div><!--End footer div-->
+<script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+    // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+    // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/53cd331911b38a65790000d3.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>
 </body>
 </html>
